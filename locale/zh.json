@@ -1,0 +1,6 @@
+{
+ "meta":{"title":"手机工作台","description":"以任务、概览和待处理事项组织手机上的 DSH 会话。"},
+ "ui":{
+  "workbench":"手机工作台","tasks":"任务","session":"会话","device":"设备","newTask":"新任务","tasksHint":"先看进展，再处理需要你的事。","all":"全部任务","loadMore":"更多历史任务","waiting":"待你处理","running":"进行中","ready":"已就绪","searchTasks":"搜索任务或工作区","showAll":"查看全部","loading":"正在加载…","noTasks":"这里还没有任务。","openTask":"查看进展","untitled":"未命名任务","approvalNeeded":"需要你确认一项操作","message":"消息","messagePlaceholder":"交代任务，或补充一句要求…","addMessage":"补充要求或发送下一条消息…","moreTools":"更多工具","stop":"停止","stopping":"停止中…","send":"发送","requestFailed":"操作失败，请检查连接后重试。","backToTasks":"返回任务列表","compactInput":"简洁输入","sessionViews":"会话视图","overview":"概览","record":"完整记录","openFailed":"无法打开这项任务，请回到列表重试。","createFailed":"创建任务失败，请重试。","chooseTask":"先从任务列表选择一项。","opening":"正在打开会话…","mobileNavigation":"手机工作台导航","chooseWorkspace":"选择新任务的工作区","cancel":"取消","noWorkspaces":"请先在电脑端添加工作区。","deviceName":"我的设备名称","localDeviceNotice":"本机预览不需要设备配对。手机配对后可以在这里修改自己的名称。","save":"保存名称","saving":"正在保存…","saved":"设备名称已保存。","appearance":"界面模式","firstVersion":"任务优先的移动界面第一版。概览使用真实会话内容，完整记录与原有操作仍可访问。","desktopMode":"切回桌面界面","openMobile":"打开手机工作台","automatic":"按屏幕自动切换"
+ }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "dsh-mobile",
+  "version": "0.1.0",
+  "description": "A task-first phone workspace for DeepSeek Harness sessions.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slicenferqin/dsh-mobile.git"
+  },
+  "homepage": "https://github.com/slicenferqin/dsh-mobile#readme",
+  "bugs": {
+    "url": "https://github.com/slicenferqin/dsh-mobile/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "mobile",
+    "workspace"
+  ],
+  "packageManager": "pnpm@11.9.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.19",
+    "dsh": ">=0.2.1-rc.2 <0.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "app.js",
+    "overview.js",
+    "styles.js",
+    "build.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "test",
+    "scripts",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "README.zh-CN.md",
+    "docs/screenshots/*.png"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "check": "node --check index.js && node --check app.js && node --check overview.js && node --check styles.js && node --check build.js && node --check client.js && node --check scripts/verify-package.mjs",
+    "test": "node --test test/*.test.js",
+    "verify:package": "node scripts/verify-package.mjs"
+  },
+  "devDependencies": {
+    "dompurify": "3.4.17",
+    "marked": "16.4.2",
+    "esbuild": "0.25.12"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
