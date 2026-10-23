@@ -48,7 +48,7 @@ dsh plugin --profile web add github:slicenferqin/dsh-mobile#v0.1.0
 For access from your phone over a temporary HTTPS tunnel, also install:
 
 ```sh
-dsh plugin --profile web add github:slicenferqin/dsh-remote-control#v0.2.2
+dsh plugin --profile web add github:slicenferqin/dsh-remote-control#v0.3.0
 ```
 
 Start DSH with `dsh web` (or `dsh --profile web`). If already running, restart that profile after the CLI installation, then refresh the page. Release tarballs are also available from [GitHub Releases](https://github.com/slicenferqin/dsh-mobile/releases); npm publication is not required.
