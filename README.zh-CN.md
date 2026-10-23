@@ -1,10 +1,18 @@
 # dsh-mobile
 
-[English](README.md)
+简体中文 | [English](README.en.md)
 
 [DeepSeek Harness（DSH）](https://github.com/deepseek-ai/deepseek-harness) 的全屏手机工作台，以任务为中心组织需要你处理的工作、会话概览和继续对话的入口，使用同一个 DSH Host 与会话记录。
 
 这是独立维护的社区 UI 插件，可在能够访问 DSH 的浏览器中单独使用。如需临时 HTTPS 远程入口与手机配对，可加装 [dsh-remote-control](https://github.com/slicenferqin/dsh-remote-control)；当前完整手机体验建议两个都装。
+
+## 宣传片
+
+https://github.com/user-attachments/assets/763e9698-6479-40da-9685-b201a600c2e4
+
+[下载完整 MP4](https://github.com/slicenferqin/dsh-mobile/releases/download/v0.1.0/DSH-Anywhere-30s.mp4) · [GIF 预览](https://github.com/slicenferqin/dsh-mobile/releases/download/v0.1.0/DSH-Anywhere-preview.gif) · [封面](https://github.com/slicenferqin/dsh-mobile/releases/download/v0.1.0/DSH-Anywhere-cover.png)
+
+30 秒宣传片，16:9、1080p 60 fps，使用原创音乐与音效，中文画面，无口播。
 
 ## 界面预览
 
@@ -45,7 +53,7 @@ dsh plugin --profile web add github:slicenferqin/dsh-remote-control#v0.2.1
 
 使用 `dsh web`（或 `dsh --profile web`）启动。若已运行，CLI 安装后请重启该 profile，再刷新页面。[GitHub Releases](https://github.com/slicenferqin/dsh-mobile/releases) 也提供发行压缩包，无需发布到 npm。
 
-DSH 默认 Web 监听位于电脑本机（`127.0.0.1`），dsh-mobile 本身不会将其开放给手机。远程使用请按 [remote-control 安装与配对文档](https://github.com/slicenferqin/dsh-remote-control/blob/main/README.zh-CN.md) 操作：在电脑安装 cloudflared，打开 **设置 → 远程控制**，扫码后确认设备名称，再明确点击 **配对并进入**。Quick Tunnel 无需 Cloudflare 账号或域名，但首次启动可能接近一分钟。其桥接要求 DSH origin 使用 `localhost`、`127.0.0.1` 或 `[::1]`，不支持 LAN 地址及通配监听目标。
+DSH 默认 Web 监听位于电脑本机（`127.0.0.1`），dsh-mobile 本身不会将其开放给手机。远程使用请按 [remote-control 安装与配对文档](https://github.com/slicenferqin/dsh-remote-control#安装与启动) 操作：在电脑安装 cloudflared，打开 **设置 → 远程控制**，扫码后确认设备名称，再明确点击 **配对并进入**。Quick Tunnel 无需 Cloudflare 账号或域名，但首次启动可能接近一分钟。其桥接要求 DSH origin 使用 `localhost`、`127.0.0.1` 或 `[::1]`，不支持 LAN 地址及通配监听目标。
 
 ## 使用与配置
 
@@ -61,7 +69,7 @@ DSH 默认 Web 监听位于电脑本机（`127.0.0.1`），dsh-mobile 本身不�
 
 插件展示现有 DSH 数据，沿用原有会话、输入、排队、停止、提问和审批机制，不新增网络监听、远程访问服务、独立账号或权限边界。所有操作继续受 Host 的既有权限约束。设备自助更名需要通过 remote-control 配对连接；其他工作台功能不依赖该插件。
 
-配合 dsh-remote-control 时，已配对手机拥有 **Host 的 owner 权限**，包括其权限策略允许的本机文件及命令能力。这不是只读界面或操作系统远程桌面，也不会锁定电脑。详见 [远程插件的安全范围与有效期说明](https://github.com/slicenferqin/dsh-remote-control/blob/main/README.zh-CN.md)。默认 8 小时访问有效期和滚动 10 天刷新窗口仅适用于同一远程入口持续运行：关闭入口、重启 DSH、重载 Host 插件或更换隧道域名都会清空配对。
+配合 dsh-remote-control 时，已配对手机拥有 **Host 的 owner 权限**，包括其权限策略允许的本机文件及命令能力。这不是只读界面或操作系统远程桌面，也不会锁定电脑。详见 [远程插件的安全范围与有效期说明](https://github.com/slicenferqin/dsh-remote-control#安全范围与限制)。默认 8 小时访问有效期和滚动 10 天刷新窗口仅适用于同一远程入口持续运行：关闭入口、重启 DSH、重载 Host 插件或更换隧道域名都会清空配对。
 
 ## 开发与测试
 
