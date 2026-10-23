@@ -48,7 +48,7 @@ dsh plugin --profile web add github:slicenferqin/dsh-mobile#v0.1.0
 如需通过临时 HTTPS 隧道从手机访问，再安装：
 
 ```sh
-dsh plugin --profile web add github:slicenferqin/dsh-remote-control#v0.3.0
+dsh plugin --profile web add github:slicenferqin/dsh-remote-control#v0.3.1
 ```
 
 使用 `dsh web`（或 `dsh --profile web`）启动。若已运行，CLI 安装后请重启该 profile，再刷新页面。[GitHub Releases](https://github.com/slicenferqin/dsh-mobile/releases) 也提供发行压缩包，无需发布到 npm。
