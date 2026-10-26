@@ -84,6 +84,10 @@ pnpm test
 
 The build bundles Markdown parsing and sanitization and loads React from the DSH Host at runtime. Tests cover overview text selection, completion evidence, history bounds, progress, and pending-interaction priority. They do not replace browser/device checks. To try a local checkout, run `dsh plugin --profile web add .` from this repository's root, then restart the Web profile and refresh its page.
 
+## Community
+
+Community link: [LINUX DO](https://linux.do/).
+
 ## License
 
 [MIT](LICENSE). Bundled third-party dependencies are documented in [Third-party notices](THIRD_PARTY_NOTICES.md).

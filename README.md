@@ -84,6 +84,10 @@ pnpm test
 
 构建会打包 Markdown 解析与净化依赖；运行时从 DSH Host 加载 React。测试覆盖概览正文选择、完成证据、历史数量边界、进展和待处理事项优先级，不能替代浏览器及设备验证。本地试用可在仓库根目录运行 `dsh plugin --profile web add .` 安装 checkout，然后重启 Web profile 并刷新页面。
 
+## 社区交流
+
+社区友链：[LINUX DO](https://linux.do/)。
+
 ## 许可证
 
 [MIT](LICENSE)。打包依赖的许可证说明见 [第三方声明](THIRD_PARTY_NOTICES.md)。
